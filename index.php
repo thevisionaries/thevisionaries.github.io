@@ -14,12 +14,6 @@ require_once 'vendor/autoload.php';
 $client = new \Github\Client();
 $repositories = $client->api('user')->repositories('ornicar');
 
-{
-    "require": {
-        "knplabs/github-api": "~1.2"
-    }
-}
-
 include "app/config.php";
 include "app/detect.php";
 

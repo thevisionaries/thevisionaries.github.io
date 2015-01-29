@@ -4,4 +4,10 @@
 
 require_once __DIR__ . '/composer' . '/autoload_real.php';
 
+{
+    "require": {
+        "knplabs/github-api": "~1.2"
+    }
+}
+
 return ComposerAutoloaderInit91754fdf70c4ad57aa068eaa6f93d798::getLoader();
