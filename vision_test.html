@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
     <head>
         <title>EyeSite - Vision Test</title>
         <link rel="icon" href="img/thevisionaries.png">
@@ -8,28 +8,19 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/cover.css">
         <link rel="stylesheet" href="css/prism.css">
+        <link rel="canonical" href="https://thevisionaries.github.io/vision_test.html">
     </head>
-    <body ng-app="EyeSite" ng-controller="visionTest as test">
-        <div class="masthead clearfix">
-            <div class="inner">
-                <h3 class="masthead-brand">EyeSite</h3>
-                <nav>
-                    <ul class="nav masthead-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <h1>Vision Examination</h1>
-                <div class="row" ng-show="test.show_weight">
-                    <img ng-click="{{ test.font_weight_l = true; test.iter_weight--; }}" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{test.iter_weight-1}}.jpg">
-                    <img ng-click="{{ test.font_weight_r = true; test.iter_weight++; }}" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{ test.iter_weight }}.jpg">
-                </div>
-                <div class="row" ng-show="test.show_spacing">
-                    <h2>{{4+6}}</h2>
-                </div>
+    <body>
+    <div class="row" ng-show="(!left_counter || !right_counter) && (count >1 && count <10)" ng-init="left_counter=false;right_counter=false">
+        <div class="col-xs-6">
+            <img ng-click="count = count - 1; left_counter = true" ng-init="count=5" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{count}}.jpg">
         </div>
+        <div class="col-xs-6">
+          <img ng-click="count = count + 1; right_counter = true" ng-init="count=5" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{count+1}}.jpg">
+        </div>
+    </div>
+	<div ng-show="(left_counter && right_counter) || (count == 1 || count == 10)">Your vision test results are {{count}}</div>
+
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
