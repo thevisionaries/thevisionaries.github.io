@@ -11,28 +11,15 @@
         <link rel="canonical" href="https://thevisionaries.github.io/vision_test.html">
     </head>
     <body>
-        <div class="container">
-        <div class="masthead clearfix">
-            <div class="inner">
-                <h3 class="masthead-brand">EyeSite</h3>
-                <nav>
-                    <ul class="nav masthead-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="https://thevisionaries.github.io/vision_test.html">Take the Vision Test</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-            </div>
-    <div class="row" ng-show="(!left_counter || !right_counter) && (count >1 && count <10)" ng-init="left_counter=false;right_counter=false">
+        <div class="row" ng-show="(!left_counter || !right_counter) && (count >1 && count <10)" ng-init="left_counter=false;right_counter=false">
         <div class="col-xs-6">
             <img ng-click="count = count - 1; left_counter = true" ng-init="count=5" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{count}}.jpg">
         </div>
         <div class="col-xs-6">
           <img ng-click="count = count + 1; right_counter = true" ng-init="count=5" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{count+1}}.jpg">
         </div>
-    </div>
-	<div ng-show="(left_counter && right_counter) || (count == 1 || count == 10)">Your vision test results are {{count}}</div>
+        </div>
+	    <div ng-show="(left_counter && right_counter) || (count == 1 || count == 10)">Your vision test results are {{count}}</div>
 
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
