@@ -34,7 +34,7 @@
           </div>
         </div>
         </div>
-        <div class="row" ng-show="((left_counter && right_counter) || (count == 1 || count == 10)) && ((!left_counter_2 || !right_counter_2) || (count2 == 1 || count2 == 6))" ng-init="left_counter_2=false;right_counter_2=false">
+        <div class="row" ng-show="((left_counter && right_counter) || (count == 1 || count == 10)) && ((!left_counter_2 || !right_counter_2) && (count2 > 1 && count2 < 6))" ng-init="left_counter_2=false;right_counter_2=false">
                     <div class="col-xs-6">
             <div ng-click="count2 = count2 - 1; left_counter_2 = true" ng-init="count2 = 3">
                 <div class="panel panel-default panel-body">
@@ -50,7 +50,7 @@
           </div>
         </div>
         </div>
-        <div class="row" ng-show="(left_counter && left_counter_2 && right_counter && right_counter_2)">
+        <div class="row" ng-show="(left_counter && left_counter_2 && right_counter && right_counter_2)||(count==1 || count == 10 || count2 == 1 || count2 == 6)">
             <h1>Your vision examination results are {{count*100+count2}}</h1>
         </div>
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
