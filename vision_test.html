@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="col-xs-6">
-          <div ng-click="count = count + 1; right_counter = true" ng-init="count=5">
+          <div ng-click="count = count + 1; right_counter = true" ng-init="count=6">
                 <div class="panel panel-default panel-body">
                     <h1 class="{{count*100+103}}">{{(count+1)*100 + 3}} Choice 2: The quick brown fox jumps over the lazy dog.</h1>
                 </div>
@@ -50,7 +50,7 @@
           </div>
         </div>
         </div>
-        <div class="row" ng-show="(left_counter && left_counter_2 && right_counter && right_counter_2)||(count2 == 1 || count2 == 6)">
+        <div class="row" ng-show="(left_counter && left_counter_2 && right_counter && right_counter_2)||(count2 >= 1 || count2 == 6)">
             <h1>Your vision examination results are {{count*100+count2}}</h1>
         </div>
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
