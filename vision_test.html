@@ -22,7 +22,7 @@
         <div class="col-xs-6">
             <div ng-click="count = count - 1; left_counter = true" ng-class="{{count*100 + 3}}" ng-init="count=5">
                 <div class="panel panel-default panel-body">
-                    <h1>Choice 1: The quick brown fox jumps over the lazy dog.</h1>
+                    <h1>{{count*100 + 3}} Choice 1: The quick brown fox jumps over the lazy dog.</h1>
                 </div>
             </div>
             <img ng-click="count = count - 1; left_counter = true" ng-init="count=5" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{count}}.jpg">
@@ -30,7 +30,7 @@
         <div class="col-xs-6">
           <div ng-click="count = count + 1; right_counter = true" ng-class="{{count*100 + 3}}" ng-init="count=5">
                 <div class="panel panel-default panel-body">
-                    <h1>Choice 2: The quick brown fox jumps over the lazy dog.</h1>
+                    <h1>{{count*100 + 3}} Choice 2: The quick brown fox jumps over the lazy dog.</h1>
                 </div>
           </div>
           <img ng-click="count = count + 1; right_counter = true" ng-init="count=5" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{count+1}}.jpg">
