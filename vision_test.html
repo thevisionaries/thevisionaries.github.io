@@ -14,10 +14,25 @@
     </head>
     <body>
         <div class="row" ng-show="(!left_counter || !right_counter) && (count >1 && count <10)" ng-init="left_counter=false;right_counter=false">
+            <div class="col-xs-12">
+                <h1>Out of the two pieces of text below, select the one that looks easier to read.</h1>
+            </div>
+        </div>
+        <div class="row" ng-show="(!left_counter || !right_counter) && (count >1 && count <10)" ng-init="left_counter=false;right_counter=false">
         <div class="col-xs-6">
+            <div ng-click="count = count - 1; left_counter = true" ng-class="count*100 + 3" ng-init="count=5">
+                <div class="panel panel-default panel-body">
+                    <h1>Choice 1: The quick brown fox jumps over the lazy dog.</h1>
+                </div>
+            </div>
             <img ng-click="count = count - 1; left_counter = true" ng-init="count=5" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{count}}.jpg">
         </div>
         <div class="col-xs-6">
+          <div ng-click="count = count + 1; right_counter = true" ng-class="count*100 + 3" ng-init="count=5">
+                <div class="panel panel-default panel-body">
+                    <h1>Choice 2: The quick brown fox jumps over the lazy dog.</h1>
+                </div>
+          </div>
           <img ng-click="count = count + 1; right_counter = true" ng-init="count=5" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{count+1}}.jpg">
         </div>
         </div>

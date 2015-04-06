@@ -8,12 +8,6 @@
     src: url("fonts/souses.ttf");
 }
 
-@font-face
-{
-    font-family: Dustismo;
-    src: url("fonts/dustismo.ttf");
-}
-
 /* Links */
 a,
 a:focus,
@@ -48,6 +42,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  font-face: EyeSite-503;
 } 
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
