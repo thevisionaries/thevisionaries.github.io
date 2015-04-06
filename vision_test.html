@@ -20,20 +20,18 @@
         </div>
         <div class="row" ng-show="(!left_counter || !right_counter) && (count >1 && count <10)" ng-init="left_counter=false;right_counter=false">
         <div class="col-xs-6">
-            <div ng-click="count = count - 1; left_counter = true" ng-init="count=5">
+            <div ng-class="count" ng-click="count = count - 100; left_counter = true" ng-init="count=503; left_counter=0; right_counter=0">
                 <div class="panel panel-default panel-body">
-                    <h1>{{count*100 + 3}} Choice 1: The quick brown fox jumps over the lazy dog.</h1>
+                    <h1>Choice 1: The quick brown fox jumps over the lazy dog.</h1>
                 </div>
             </div>
-            <img ng-click="count = count - 1; left_counter = true" ng-init="count=5" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{count}}.jpg">
         </div>
         <div class="col-xs-6">
-          <div ng-click="count = count + 1; right_counter = true" ng-init="count=5">
+          <div ng-class="count" ng-click="count = count + 100; right_counter = true" ng-init="count=503; left_counter=0; right_counter=0">
                 <div class="panel panel-default panel-body">
-                    <h1>{{(count+1)*100 + 3}} Choice 2: The quick brown fox jumps over the lazy dog.</h1>
+                    <h1> Choice 2: The quick brown fox jumps over the lazy dog.</h1>
                 </div>
           </div>
-          <img ng-click="count = count + 1; right_counter = true" ng-init="count=5" ng-src="http://lorempixel.com/output/cats-q-c-640-480-{{count+1}}.jpg">
         </div>
         </div>
         <div ng-show="(left_counter && right_counter) || (count == 1 || count == 10)"><p class="1001">Your vision test results are {{count}}</p></div>
