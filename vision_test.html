@@ -34,7 +34,7 @@
           </div>
         </div>
         </div>
-        <div class="row" ng-show="((left_counter && right_counter) || (count == 1 || count == 10)) && ((!left_counter_2 || !right_counter_2) || (count2 > 1 && count2 < 6))" ng-init="left_counter_2=false;right_counter_2=false">
+        <div class="row" ng-show="((left_counter && right_counter) || (count == 1 || count == 10)) && ((!left_counter_2 || !right_counter_2) && (count2 > 1 && count2 < 6))" ng-init="left_counter_2=false;right_counter_2=false">
                     <div class="col-xs-6">
             <div ng-click="count2 = count2 - 1; left_counter_2 = true" ng-init="count2=3">
                 <div class="panel panel-default panel-body">
