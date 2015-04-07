@@ -1,1 +1,1 @@
-angular.module('ngClickExample', ['ngTouch']);
+angular.module('ngClickExample', ['ngTouch', 'ng']);

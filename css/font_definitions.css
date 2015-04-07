@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
                 font-family: Eyesite-101;
                 src: url("Eyesite/101.woff2");
 }
@@ -296,4 +297,303 @@
 {
                 font-family: Eyesite-1006;
                 src: url("Eyesite/1006.woff2");
+=======
+                font-family: EyeSite-101;
+                src: url("eyesite/101.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-102;
+                src: url("eyesite/102.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-103;
+                src: url("eyesite/103.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-104;
+                src: url("eyesite/104.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-105;
+                src: url("eyesite/105.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-106;
+                src: url("eyesite/106.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-201;
+                src: url("eyesite/201.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-202;
+                src: url("eyesite/202.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-203;
+                src: url("eyesite/203.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-204;
+                src: url("eyesite/204.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-205;
+                src: url("eyesite/205.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-206;
+                src: url("eyesite/206.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-301;
+                src: url("eyesite/301.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-302;
+                src: url("eyesite/302.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-303;
+                src: url("eyesite/303.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-304;
+                src: url("eyesite/304.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-305;
+                src: url("eyesite/305.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-306;
+                src: url("eyesite/306.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-401;
+                src: url("eyesite/401.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-402;
+                src: url("eyesite/402.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-403;
+                src: url("eyesite/403.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-404;
+                src: url("eyesite/404.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-405;
+                src: url("eyesite/405.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-406;
+                src: url("eyesite/406.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-501;
+                src: url("eyesite/501.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-502;
+                src: url("eyesite/502.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-503;
+                src: url("eyesite/503.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-504;
+                src: url("eyesite/504.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-505;
+                src: url("eyesite/505.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-506;
+                src: url("eyesite/506.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-601;
+                src: url("eyesite/601.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-602;
+                src: url("eyesite/602.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-603;
+                src: url("eyesite/603.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-604;
+                src: url("eyesite/604.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-605;
+                src: url("eyesite/605.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-606;
+                src: url("eyesite/606.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-701;
+                src: url("eyesite/701.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-702;
+                src: url("eyesite/702.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-703;
+                src: url("eyesite/703.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-704;
+                src: url("eyesite/704.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-705;
+                src: url("eyesite/705.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-706;
+                src: url("eyesite/706.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-801;
+                src: url("eyesite/801.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-802;
+                src: url("eyesite/802.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-803;
+                src: url("eyesite/803.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-804;
+                src: url("eyesite/804.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-805;
+                src: url("eyesite/805.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-806;
+                src: url("eyesite/806.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-901;
+                src: url("eyesite/901.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-902;
+                src: url("eyesite/902.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-903;
+                src: url("eyesite/903.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-904;
+                src: url("eyesite/904.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-905;
+                src: url("eyesite/905.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-906;
+                src: url("eyesite/906.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-1001;
+                src: url("eyesite/1001.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-1002;
+                src: url("eyesite/1002.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-1003;
+                src: url("eyesite/1003.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-1004;
+                src: url("eyesite/1004.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-1005;
+                src: url("eyesite/1005.woff2");
+}
+@font-face
+{
+                font-family: EyeSite-1006;
+                src: url("eyesite/1006.woff2");
+>>>>>>> 381ebacc40a7cda1e7b8c5dc66a8300f8cd0cb5a
 }
