@@ -22,7 +22,7 @@
            <div ng-if="(right_counter && !left_counter)">
                  <div ng-init="$scope.fix = 1"></div>
             </div>
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-md-6">
             <div ng-click="count = count - 1; left_counter = true" ng-init="count=5">
                 
                 <div class="panel panel-default panel-body">
@@ -48,14 +48,14 @@
         <div class="col-xs-12 col-md-6">
             <div ng-click="count2 = count2 - 1; left_counter_2 = true" ng-init="count2 = 3">
                 <div class="panel panel-default panel-body">
-                    <h1 class="{{count*100+$scope.fix*100+count2}}">{{(count+$scope.fix)*100 + count2}} Choice 1: The quick brown fox jumps over the lazy dog.</h1>
+                    <h1 class="{{count*100+$scope.fix*100+count2}}">Choice 1: The quick brown fox jumps over the lazy dog.</h1>
                 </div>
             </div>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-12 col-md-6">
           <div ng-click="count2 = count2 + 1; right_counter_2 = true" ng-init="count2 = 3">
                 <div class="panel panel-default panel-body">
-                    <h1 class="{{count*100+$scope.fix*100+count2+1}}">{{count*100+($scope.fix)*100 + count2+1}} Choice 2: The quick brown fox jumps over the lazy dog.</h1>
+                    <h1 class="{{count*100+$scope.fix*100+count2+1}}">Choice 2: The quick brown fox jumps over the lazy dog.</h1>
                 </div>
           </div>
         </div>
