@@ -13,58 +13,51 @@
         <link rel="stylesheet" href="css/font_classes.css">
     </head>
     <body>
-        <div class="row" ng-show="(!left_counter || !right_counter || !left_counter_2 || !right_counter_2)" ng-init="left_counter=false;right_counter=false; left_counter_2=false; right_counter_2=false">
+        <div class="row" ng-show="(!left_counter || !right_counter || !left_counter_2 || !right_counter_2)" ng-init="left_counter=false; left_counter_2=false; right_counter=false; right_counter_2=false; last_clicked=0; last_clicked_2=0;">
             <div class="col-xs-12 header">
                 <h1> Out of the two pieces of text below, select the one that looks easier to read.</h1>
-            </div><br><br>
+            </div><br /><br />
         </div>
-        <div class="row" ng-show="(!left_counter || !right_counter) && (count > 1 && count < 10)" ng-init="left_counter=false;right_counter=false;$scope.fix=0" >
-           <div ng-if="(right_counter && !left_counter)">
-                 <div ng-init="$scope.fix = 1"></div>
-            </div>
+        <div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)" ng-init="count=5" >
         <div class="col-xs-12 col-md-6">
-            <div ng-click="count = count - 1; left_counter = true" ng-init="count=5">
-                
+            <div ng-click="left_counter = true; count = count - 1; last_clicked = 1">
                 <div class="panel panel-default panel-body">
-                    <h1 class="{{count*100+3}}">Choice 1: The quick brown fox jumps over the lazy dog.</h1>
+                    <h1 class="{{count*100+3}}">{{count*100+3}} Choice 1: The quick brown fox jumps over the lazy dog.</h1>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-md-6">
-          <div ng-click="count = count + 1; right_counter = true" ng-init="count=5">
+          <div ng-click="right_counter = true; count = count + 1; last_clicked = 0">
                 <div class="panel panel-default panel-body">
-                    <h1 class="{{count*100+103}}">Choice 2: The quick brown fox jumps over the lazy dog.</h1>
+                    <h1 class="{{count*100+103}}">{{count*100+103}} Choice 2: The quick brown fox jumps over the lazy dog.</h1>
                 </div>
           </div>
         </div>
         </div>
-        <div class="row" ng-show="((left_counter && right_counter) || (count == 1 || count == 10)) && ((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))" ng-init="left_counter_2=false;right_counter_2=false;$scope.fix_2 = 0">
-            <div ng-if="(right_counter_2 && !left_counter_2)">
-                 <div ng-init="$scope.fix_2 = 1"></div>
-            </div>
-             <div ng-if="(count == 10)">
-                 <div ng-init="$scope.fix = 0"></div>
-            </div>
+        <div ng-if="(left_counter && right_counter) || count == 0 || count == 10 "><div ng-init="count = count + last_clicked">
+        <div class="row" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))" ng-init="count2 = 3">
         <div class="col-xs-12 col-md-6">
-            <div ng-click="count2 = count2 - 1; left_counter_2 = true" ng-init="count2 = 3">
+            <div ng-click="left_counter_2 = true; count2 = count2 - 1; last_clicked_2 = 1">
                 <div class="panel panel-default panel-body">
-                    <h1 class="{{count*100+$scope.fix*100+count2}}">Choice 1: The quick brown fox jumps over the lazy dog.</h1>
+                    <h1 class="{{count*100+count2}}">{{count*100+count2}} Choice 1: The quick brown fox jumps over the lazy dog.</h1>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-md-6">
-          <div ng-click="count2 = count2 + 1; right_counter_2 = true" ng-init="count2 = 3">
+          <div ng-click="right_counter_2 = true; count2 = count2 + 1; last_clicked_2 = 0">
                 <div class="panel panel-default panel-body">
-                    <h1 class="{{count*100+$scope.fix*100+count2+1}}">Choice 2: The quick brown fox jumps over the lazy dog.</h1>
+                    <h1 class="{{count*100+count2+1}}">{{count*100+count2+1}} Choice 2: The quick brown fox jumps over the lazy dog.</h1>
                 </div>
           </div>
         </div>
+        </div>    
+        <div ng-if="(left_counter_2 && right_counter_2) || count2 == 0 || count2 == 6"><div ng-init="count2 = count2 + last_clicked_2"> 
+        <div class="row" ng-show="(left_counter_2 && right_counter_2)||(count2 == 1 || count2 == 6)">
+            <h1>Your vision examination results are {{count*100 + count2}}</h1>
         </div>
-        <div class="row" ng-show="(left_counter_2 && right_counter_2)||(count2 <= 1 || count2 >= 6)" ng-init="final_score = count*100+$scope.fix*100+count2+$scope.fix_2">
-            <div ng-if="(count2 == 6)">
-                 <div ng-init="$scope.fix_2 = 0"></div>
-            </div>
-            <h1>Your vision examination results are {{count*100+$scope.fix*100+count2+$scope.fix_2}}</h1>
+        </div>
+        </div>    
+        </div>
         </div>
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
