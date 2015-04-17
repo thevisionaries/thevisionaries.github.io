@@ -14,16 +14,16 @@
 
 html,
 body {
-  height: 100%;
-  overflow-y: hidden;
+    height: 100%;
+    overflow-y: hidden;
 }
 body {
-  color: #000000;
-  font-face: EyeSite-503;
+    color: #000000;
+    padding-bottom: 70px;
 } 
 .header
 {
-   text-align: center;
+    text-align: center;
 }
 .panel-body
 {
@@ -33,4 +33,8 @@ body {
 .h1
 {
     font-size: 2em;
+}
+.navbar-fixed-bottom
+{
+    text-align: center;
 }
