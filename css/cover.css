@@ -40,6 +40,11 @@ body {
 }
 .bottom-text-padding
 {
+    color: #999;
     padding-top: 15px;
     padding-bottom: 0px;
+}
+.bottom-text-padding a:hover
+{
+    color: #fff;
 }
