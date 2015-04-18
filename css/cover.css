@@ -30,7 +30,8 @@ body {
 }
 .panel-body
 {
-    background: #4A1E28;
+    border: 0px;
+    background: rgba(74, 30, 40, 0.05);
     font-size: 1.5em;
 }
 .h1
