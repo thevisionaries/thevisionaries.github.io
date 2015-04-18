@@ -57,9 +57,8 @@ body {
 }
 .eyesite-color
 {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #684AD9;
-    text-decoration: underline;
 }
 .navbar-inverse
 {
@@ -81,5 +80,4 @@ body {
 {
     color: #337ab7;
     font-size: 1.5em;
-    text-decoration: underline;
 }
