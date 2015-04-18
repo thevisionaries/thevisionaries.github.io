@@ -73,6 +73,7 @@ body {
 }
 .carousel-control.right
 {
+    display:inline-block;
     left: auto;
     right: 0;
 }
