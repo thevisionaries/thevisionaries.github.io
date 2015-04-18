@@ -59,6 +59,8 @@ body {
 {
     font-size: 1.5em;
     color: #684AD9;
+    text-decoration: underline;
+    text-decoration-style: wavy;
 }
 .navbar-inverse
 {
