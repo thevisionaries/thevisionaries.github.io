@@ -28,12 +28,32 @@
                         <li><a href="help.html">Installation</a></li>
                     </ul>
                 </div>
+                
+        <ul class="nav nav-tabs" role="tablist" id="myTab">
+  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+  <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+  <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+</ul>
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="home">...</div>
+  <div role="tabpanel" class="tab-pane" id="profile">...</div>
+  <div role="tabpanel" class="tab-pane" id="messages">...</div>
+  <div role="tabpanel" class="tab-pane" id="settings">...</div>
+</div>
+
         </nav>
         <nav class="navbar navbar-inverse navbar-fixed-bottom">
             <div class="container">
                 <p class="bottom-text-padding"> &copy; The Visionaries 2015 &#8226; <a href="privacy.html">Privacy Policy</a> &#8226; <a href="eosp.html">View the EyeSite Open Source Project.</a> </p>
             </div>
         </nav>
+        <script>
+            $(function () {
+                $('#myTab a:last').tab('show')
+            })
+            </script>
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script src="js/angular.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
