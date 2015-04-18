@@ -31,8 +31,9 @@ body {
 .panel-body
 {
     border: 0px;
-    background: rgba(74, 30, 40, 0.05);
+    background: rgba(37, 15, 20, 0.15);
     font-size: 1.5em;
+    color: #eee;
 }
 .h1
 {
