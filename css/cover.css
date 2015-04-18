@@ -77,7 +77,8 @@ body {
     left: auto;
     right: 0;
 }
-.top-nav-links
+.navbar-inverse .navbar-nav>li>a
 {
-    color: #66afe9;
+    color: #337ab7;
+    font-size: 1.5em;
 }
