@@ -84,3 +84,7 @@ body {
     color: #337ab7;
     font-size: 1.25em;
 }
+.col-xs-12
+{
+    padding: 10px 10px 10px 10px;
+}
