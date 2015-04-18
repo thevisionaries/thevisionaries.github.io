@@ -13,6 +13,25 @@
         <link rel="stylesheet" href="css/font_classes.css">
     </head>
     <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><p class="eyesite-color">EyeSite</p></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="vision_test.html">Vision Test</a></li>
+                        <li><a href="help.html">Installation</a></li>
+                    </ul>
+                </div>
+        </nav>
         <div class="row" ng-show="(!left_counter || !right_counter || !left_counter_2 || !right_counter_2)" ng-init="left_counter=false; left_counter_2=false; right_counter=false; right_counter_2=false; last_clicked=0; last_clicked_2=0;">
             <div class="col-xs-12 header">
                 <h1> Out of the two pieces of text below, select the one that looks easier to read.</h1>
@@ -59,6 +78,11 @@
         </div>    
         </div>
         </div>
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container">
+                <p class="bottom-text-padding"> &copy; The Visionaries 2015 &#8226; <a href="privacy.html">Privacy Policy</a> &#8226; <a href="eosp.html">View the EyeSite Open Source Project.</a> </p>
+            </div>
+        </nav>
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
