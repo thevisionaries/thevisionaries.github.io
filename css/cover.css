@@ -20,7 +20,8 @@ body {
 body {
     padding-top: 70px;
     color: #000000;
-    background: #4A1E28;
+    background-image: url("/img/pattern-abwj.png");
+	background-repeat: repeat;
     padding-bottom: 70px;
 }
 .header
@@ -29,7 +30,7 @@ body {
 }
 .panel-body
 {
-    background:#eeeeee;
+    background: #4A1E28;
     font-size: 1.5em;
 }
 .h1
