@@ -57,7 +57,7 @@ body {
 }
 .eyesite-color
 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #684AD9;
     text-decoration: underline;
 }
@@ -76,4 +76,8 @@ body {
     display:inline-block;
     left: auto;
     right: 0;
+}
+.top-nav-links
+{
+    color: #66afe9;
 }
