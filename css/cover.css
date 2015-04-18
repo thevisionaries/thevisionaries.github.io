@@ -40,5 +40,6 @@ body {
 }
 .bottom-text-padding
 {
-    padding: 15px 15px;
+    padding-top: 15px;
+    padding-bottom: 0px;
 }
