@@ -67,8 +67,7 @@ body {
     border-bottom : 0px;
     border-top: 0px;
 }
-.carousel-control
+.carousel-control, .carousel-control a:hover
 {
     background: rgba(0, 0, 0, 0);
-    opacity: 0;
 }
