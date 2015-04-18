@@ -63,7 +63,7 @@ body {
 }
 .navbar-inverse
 {
-    background: #4A1E28;
+    background: rgba(74, 30, 40, 0.2);
     border-bottom : 0px;
     border-top: 0px;
 }
