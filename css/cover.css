@@ -70,4 +70,5 @@ body {
 .carousel-control
 {
     background: rgba(0, 0, 0, 0);
+    opacity: 0;
 }
