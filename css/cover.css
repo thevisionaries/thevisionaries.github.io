@@ -20,6 +20,7 @@ body {
 body {
     padding-top: 70px;
     color: #000000;
+    background: 7A3E48;
     padding-bottom: 70px;
 } 
 .header
@@ -56,5 +57,6 @@ body {
 }
 .eyesite-color
 {
+    background: #684AD9;
     color: #684AD9;
 }
