@@ -57,5 +57,11 @@ body {
 }
 .eyesite-color
 {
+    font-size: 1.5em;
     color: #684AD9;
+}
+.navbar-inverse
+{
+    background: #4A1E28;
+    border-bottom-color: #3A0E18;
 }
