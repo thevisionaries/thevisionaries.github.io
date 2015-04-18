@@ -60,11 +60,14 @@ body {
     font-size: 1.5em;
     color: #684AD9;
     text-decoration: underline;
-    text-decoration-style: wavy;
 }
 .navbar-inverse
 {
     background: #4A1E28;
     border-bottom : 0px;
     border-top: 0px;
+}
+.carousel-control
+{
+    background: rgba(0, 0, 0, 0);
 }
