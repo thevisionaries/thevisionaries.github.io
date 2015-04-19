@@ -26,6 +26,7 @@ body {
 }
 .header
 {
+    margin: auto auto auto auto;
     text-align: center;
 }
 .panel-body
