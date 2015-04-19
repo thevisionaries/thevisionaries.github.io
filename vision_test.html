@@ -86,7 +86,11 @@
         </div>    
         <div ng-if="(left_counter_2 && right_counter_2) || count2 == 0 || count2 == 6"><div ng-init="count2 = count2 + last_clicked_2"> 
         <div class="row" ng-show="(left_counter_2 && right_counter_2)||(count2 == 1 || count2 == 6)">
-            <h1>Your vision examination results are {{count*100 + count2}}</h1>
+            <div class="col-xs-1"><!--Placeholder--></div>
+            <div class="col-xs-10">
+                <h1 class="header">Your vision examination results are {{count*100 + count2}}</h1>
+            </div>
+            <div class="col-xs-1"><!--Placeholder--></div>
         </div>
         </div>
         </div>    
