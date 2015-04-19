@@ -33,13 +33,14 @@
         </nav
         </div>
         
-        <div ng-show="!ok" class="row" ng-init="ok=false">
+        <div ng-show="!ok1" class="row" ng-init="ok1=false; ok2=false">
             <div class="col-xs-12 header">
                 <h1>Terms and Conditions - EyeSite Vision Examination</h1>
             </div>
-            <button ng-click="ok=true">Accept</button><a href="index.html"><button>Decline</button></a>
+            <button ng-click="ok2=true">Accept</button><a href="index.html"><button>Decline</button></a>
         </div>
-        <div ng-if="ok">
+        <div ng-if="ok2">
+            <div ng-init="ok1=false"></div>
         <div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)" ng-init="left_counter=false; left_counter_2=false; right_counter=false; right_counter_2=false; last_clicked=0; last_clicked_2=0;">
             <div class="col-xs-12 header">
                 <h1>Instructions</h1>
