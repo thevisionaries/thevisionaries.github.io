@@ -31,13 +31,13 @@
                     </ul>
                 </div>
         </nav>
-        <div class="row" ng-show="!ok" ng-init="ok=false; left_counter=false; left_counter_2=false; right_counter=false; right_counter_2=false; last_clicked=0; last_clicked_2=0;">
+        <div class="row" ng-show="!ok" ng-init="ok=false; left_counter=true; right_counter=true">
             <div class="col-xs-12 header">
                 <h1>Terms and Conditions - EyeSite Vision Examination</h1>
             </div>
-            <button ng-click="ok = true">Accept</button><button href="index.html">Decline</button>
+            <button ng-click="ok=true; left_counter=false; right_counter=false">Accept</button><button href="index.html">Decline</button>
         </div>
-        <div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)">
+        <div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)" ng-init="left_counter=false; left_counter_2=false; right_counter=false; right_counter_2=false; last_clicked=0; last_clicked_2=0;">
             <div class="col-xs-12 header">
                 <h1>Instructions</h1>
             </div>
