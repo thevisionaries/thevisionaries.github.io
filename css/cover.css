@@ -93,7 +93,7 @@ body {
     font-size: 1.5em;
     font-weight:700;
 }
-.bk
+.bk, .bk a:hover
 {
     color: #000;
 }
