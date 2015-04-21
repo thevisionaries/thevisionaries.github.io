@@ -52,7 +52,7 @@
                 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
                 <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>      
                 </ul>
-                <button class="bk btn green" ng-click="ok2=true" id="link">Accept</button><a class="bk" href="index.html"><button class="btn red">Decline</button></a>
+                <button class="bk btn green" ng-click="ok2=true">Accept</button><a class="bk" href="index.html"><button class="btn red">Decline</button></a>
             </div>
             <div class="col-xs-1"><!--Placeholder--></div>
         </div>
@@ -128,15 +128,14 @@
             </div>
         </nav>
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script>
+            $("button").click(function(){
+                $("div").scrollTop();
+            });
+        </script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/prism.js"></script>
         <script src="js/angular.min.js"></script>
-        <script>
-            $('#link').click(function(){
-    $("html, body").animate({ scrollTop: 0 }, 600);
-    return false;
- });
-        </script>
         <script src="js/vt_app.js"></script>
     </body>
 </html>
