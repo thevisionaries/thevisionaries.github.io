@@ -5,7 +5,7 @@
 @font-face
 {
     font-family: 'Souses';
-    src: url('eyesite/souses.otf');
+    src: url('eyesite/souses.otf') format('opentype');
 }
 
 /*
