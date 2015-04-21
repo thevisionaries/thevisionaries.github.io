@@ -40,10 +40,6 @@ body {
 {
     font-size: 2em;
 }
-.navbar-fixed-bottom
-{
-    text-align: center;
-}
 .bottom-text-padding
 {
     color: #999;
@@ -158,5 +154,6 @@ body {
 }
 .navbar-fixed-bottom
 {
+    text-align: center;
     background-color:#7D003C;
 }
