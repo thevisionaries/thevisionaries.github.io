@@ -156,3 +156,7 @@ body {
 .left{
     text-align: left;
 }
+.navbar-fixed-bottom
+{
+    background-color:#7D003C;
+}
