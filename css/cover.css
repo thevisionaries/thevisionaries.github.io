@@ -62,7 +62,7 @@ body {
 }
 .navbar-inverse
 {
-    background: rgba(74, 30, 40, 0.15);
+    background-color:#4c1832;
     border-bottom : 0px;
     border-top: 0px;
 }
@@ -155,5 +155,4 @@ body {
 .navbar-fixed-bottom
 {
     text-align: center;
-    background-color:#4c1832;
 }
