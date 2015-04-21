@@ -110,19 +110,10 @@ body {
   -o-transition: .3s;
   display: inline-block;
 }
-.blue {
-  color: #55acee;
-  border: 2px #55acee solid;
-}
-
-.blue:hover {
-  background-color: #55acee;
-  color: #fff
-}
-
 .green {
   color: #2ecc71;
   border: 2px #2ecc71 solid;
+    background-color:#000;
 }
 
 .green:hover {
@@ -133,6 +124,7 @@ body {
 .red {
   color: #e74c3c;
   border: 2px #e74c3c solid;
+    background-color:#000;
 }
 
 .red:hover {
@@ -143,6 +135,7 @@ body {
 .purple {
   color: #9b59b6;
   border: 2px #9b59b6 solid;
+    background-color: #000;
 }
 
 .purple:hover {
@@ -150,19 +143,10 @@ body {
   background-color: #9b59b6;
 }
 
-.orange {
-  color: #e67e22;
-  border: 2px #e67e22 solid;
-}
-
-.orange:hover {
-  color: #fff;
-  background-color: #e67e22;
-}
-
 .yellow {
   color: #f1c40f;
   border: 2px #f1c40f solid;
+    background-color: #000;
 }
 
 .yellow:hover {
