@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app = "mainModule">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EyeSite - Vision Examination</title>
-        <link rel="canonical" href="https://thevisionaries.github.io/vision_test.html">
+        <link rel="canonical" href="https://thevisionaries.tk/vision_test.html">
         <link rel="icon" href="img/thevisionaries.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.css">
@@ -18,10 +18,10 @@
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html"><p class="eyesite-color">EyeSite</p></a>
                 </div>
@@ -32,96 +32,100 @@
                         <li><a href="help.html">Installation</a></li>
                     </ul>
                 </div>
-        </nav
-        </div>
-        <div ng-hide="ok2" class="row" ng-init="ok2=false">
-            <div class="col-xs-1"><!--Placeholder--></div>
-            <div class="col-xs-10 header panel panel-default panel-body">
-                <h1>Terms and Conditions - EyeSite Vision Examination</h1>
-                <ul class="left" type="1">
-                    <li><h3>General Terms</h3></li>
-                    
-                        <p>Thank you for using EyeSite. The EyeSite Vision Examination is licensed and owned by The Visionaries, located at 777 Glades Road, Boca Raton, FL 33431.</p>
-                    
-                    
-                        <p>By using EyeSite, you are agreeing to these terms. Please read them before you accept them.</p>
-                    
-                    <li><h3>Our Services</h3></li>
-                    <p>EyeSite is licensed for use under the terms of the MIT License.</p>
-                    <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-                <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-                <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>      
-                </ul>
-                <button class="bk btn green" ng-click="ok2=true">Accept</button><a class="bk" href="index.html"><button class="btn red">Decline</button></a>
-            </div>
-            <div class="col-xs-1"><!--Placeholder--></div>
-        </div>
-        <div ng-if="ok2">
-            <div class="panel panel-default panel-body" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)">
-        <div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)" ng-init="left_counter=false; left_counter_2=false; right_counter=false; right_counter_2=false; last_clicked=0; last_clicked_2=0;">
-            <div class="col-xs-12 header">
-                <h1>Instructions: Out of the two choices shown below, select the font which looks better.</h1>
-            </div>
-        </div>
-        <div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)" ng-init="count=5">
-        <div class="col-xs-12 col-md-6">
-            <div ng-click="left_counter = true; count = count - 1; last_clicked = 1">
-                <div class="panel panel-default panel-body">
-                    <h1 class="{{count*100+3}}">Choice 1: The quick brown fox jumps over the lazy dog.</h1>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div ng-click="right_counter = true; count = count + 1; last_clicked = 0">
-                <div class="panel panel-default panel-body">
-                    <h1 class="{{count*100+103}}">Choice 2: The quick brown fox jumps over the lazy dog.</h1>
-                </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div ng-if="(left_counter && right_counter) || count == 0 || count == 10 "><div ng-init="count = count + last_clicked">
-            <div class="panel panel-default panel-body" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))">
-        <div class="row" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))">
-            <div class="col-xs-12 header">
-                <h1>Instructions: Out of the two choices shown below, select the font which looks better.</h1>
-            </div>
-        </div>
-        <div class="row" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))" ng-init="count2 = 3">
-        <div class="col-xs-12 col-md-6">
-            <div ng-click="left_counter_2 = true; count2 = count2 - 1; last_clicked_2 = 1">
-                <div class="panel panel-default panel-body">
-                    <h1 class="{{count*100+count2}}">Choice 1: The quick brown fox jumps over the lazy dog.</h1>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div ng-click="right_counter_2 = true; count2 = count2 + 1; last_clicked_2 = 0">
-                <div class="panel panel-default panel-body">
-                    <h1 class="{{count*100+count2+1}}">Choice 2: The quick brown fox jumps over the lazy dog.</h1>
-                </div>
-          </div>
-            </div>
-        </div>
-        </div>    
-        <div ng-if="(left_counter_2 && right_counter_2) || count2 == 0 || count2 == 6"><div ng-init="count2 = count2 + last_clicked_2"> 
-        <div class="row" ng-show="(left_counter_2 && right_counter_2)||(count2 == 1 || count2 == 6)">
-            <div class="col-xs-1"><!--Placeholder--></div>
-            <div class="col-xs-10 header panel panel-defauly panel-body">
-                <h1>Your vision examination results are <strong>{{count*100 + count2}}</strong></h1>
-                <h2>Please write down this number, as you may need to reference it in the future.</h2>
-                <h3>Downloads:</h3>
-                <a class="bk" href="win/setup.exe"><button class="btn purple hidden-xs hidden-sm">EyeSite for Windows</button></a>
-                <a class="bk" href="and/{{count*100+count2}}.apk"><button class="btn yellow">EyeSite for Android</button></a>
-
-            </div>
-            <div class="col-xs-1"><!--Placeholder--></div>
-        </div>
-        </div>
-        </div>    
-        </div>
-        </div>
-        </div>
+			</div>
+        </nav>
+        
+		<div ng-controller = "mainController">
+			<div ng-hide="ok2" class="row" ng-init="ok2=false">
+				<div class="col-xs-1"><!--Placeholder--></div>
+				<div class="col-xs-10 header panel panel-default panel-body">
+					<h1>Terms and Conditions - EyeSite Vision Examination</h1>
+					<ul class="left" type="1">
+						<li><h3>General Terms</h3></li>
+						
+							<p>Thank you for using EyeSite. The EyeSite Vision Examination is licensed and owned by The Visionaries, located at 777 Glades Road, Boca Raton, FL 33431.</p>
+						
+						
+							<p>By using EyeSite, you are agreeing to these terms. Please read them before you accept them.</p>
+						
+						<li><h3>Our Services</h3></li>
+						<p>EyeSite is licensed for use under the terms of the MIT License.</p>
+						<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+						<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+						<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>      
+					</ul>
+					<button class="bk btn green" ng-click="ok2=true">Accept</button><a class="bk" href="index.html"><button class="btn red">Decline</button></a>
+				</div>
+				<div class="col-xs-1"><!--Placeholder--></div>
+			</div>
+			<div ng-if="ok2">
+				<div class="panel panel-default panel-body" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)">
+					<div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)" ng-init="left_counter=false; left_counter_2=false; right_counter=false; right_counter_2=false; last_clicked=0; last_clicked_2=0;">
+						<div class="col-xs-12 header">
+							<h1>Instructions: Out of the two choices shown below, select the font which looks better.</h1>
+						</div>
+					</div>
+					<div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)" ng-init="count=5">
+						<div class="col-xs-12 col-md-6">
+							<div ng-click="left_counter = true; count = count - 1; last_clicked = 1">
+								<div class="panel panel-default panel-body">
+									<h1 class="{{count*100+3}}">Choice 1: The quick brown fox jumps over the lazy dog.</h1>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<div ng-click="right_counter = true; count = count + 1; last_clicked = 0">
+								<div class="panel panel-default panel-body">
+									<h1 class="{{count*100+103}}">Choice 2: The quick brown fox jumps over the lazy dog.</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div ng-if="(left_counter && right_counter) || count == 0 || count == 10 ">
+					<div ng-init="count = count + last_clicked">
+						<div class="panel panel-default panel-body" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))">
+							<div class="row" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))">
+								<div class="col-xs-12 header">
+									<h1>Instructions: Out of the two choices shown below, select the font which looks better.</h1>
+								</div>
+							</div>
+							<div class="row" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))" ng-init="count2 = 3">
+								<div class="col-xs-12 col-md-6">
+									<div ng-click="left_counter_2 = true; count2 = count2 - 1; last_clicked_2 = 1">
+										<div class="panel panel-default panel-body">
+											<h1 class="{{count*100+count2}}">Choice 1: The quick brown fox jumps over the lazy dog.</h1>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+								  <div ng-click="right_counter_2 = true; count2 = count2 + 1; last_clicked_2 = 0">
+										<div class="panel panel-default panel-body">
+											<h1 class="{{count*100+count2+1}}">Choice 2: The quick brown fox jumps over the lazy dog.</h1>
+										</div>
+								  </div>
+								</div>
+							</div>
+						</div>    
+						<div ng-if="(left_counter_2 && right_counter_2) || count2 == 0 || count2 == 6">
+							<div ng-init="count2 = count2 + last_clicked_2"> 
+								<div class="row" ng-show="(left_counter_2 && right_counter_2)||(count2 == 1 || count2 == 6)">
+									<div class="col-xs-1"><!--Placeholder--></div>
+									<div class="col-xs-10 header panel panel-defauly panel-body" ng-init = "postCall(count*100+count2)">
+										<h1>Your vision examination results are <strong>{{count*100 + count2}}</strong></h1>
+										<h2>Please write down this number, as you may need to reference it in the future.</h2>
+										<h3>Downloads:</h3>
+										<a class="bk" href="win/setup.exe"><button class="btn purple hidden-xs hidden-sm">EyeSite for Windows</button></a>
+										<a class="bk" href="and/{{count*100+count2}}.apk"><button class="btn yellow">EyeSite for Android</button></a>
+									</div>
+									<div class="col-xs-1"><!--Placeholder--></div>
+								</div>
+							</div>
+						</div>    
+					</div>
+				</div>
+			</div>
+		</div>
         <nav class="navbar navbar-inverse navbar-fixed-bottom">
             <div class="container">
                 <p class="bottom-text-padding"> &copy; The Visionaries 2015 &#8226; <a href="privacy.html">Privacy Policy</a> &#8226; <a href="eosp.html">View the EyeSite Open Source Project.</a> </p>
