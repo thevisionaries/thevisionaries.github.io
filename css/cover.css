@@ -160,3 +160,7 @@ body {
     font-size: 1.7em;
     font-weight: 775;
 }
+.center
+{
+    margin: auto auto auto auto;
+}
