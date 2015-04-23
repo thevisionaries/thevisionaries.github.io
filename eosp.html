@@ -29,6 +29,17 @@
                     </ul>
                 </div>
         </nav>
+                    
+        <ul class="nav nav-tabs" role="tablist" id="myTab">
+    <li role="presentation" class="active"><a class="xl" href="#eosp" aria-controls="eosp" role="tab" data-toggle="tab">The EyeSite Open Source Project</a></li>
+  <li role="presentation"><a class="xl" href="#font" aria-controls="font" role="tab" data-toggle="tab">EyeSite Open Font Family</a></li>
+</ul>
+
+<div class="tab-content">
+     <div role="tabpanel" class="tab-pane active panel panel-default panel-body" id="eosp"><h1>Source Code</h1></div>
+    <div role="tabpanel" class="tab-pane panel panel-default panel-body" id="font"><h1>Fonts</h1></div>
+    
+</div>
         <nav class="navbar navbar-inverse navbar-fixed-bottom">
             <div class="container">
                 <p class="bottom-text-padding"> &copy; The Visionaries 2015 &#8226; <a href="privacy.html">Privacy Policy</a> &#8226; <a href="eosp.html">View the EyeSite Open Source Project.</a> </p>
@@ -36,6 +47,11 @@
         </nav>
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script src="js/angular.min.js"></script>
+            <script>
+            $(function () {
+                $('#myTab a:last').tab('show')
+            })
+            </script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/prism.js"></script>
     </body>
