@@ -34,7 +34,6 @@
                 </div>
 			</div>
         </nav>
-        
 		<div ng-controller = "mainController">
 			<div ng-hide="ok2" class="row" ng-init="ok2=false">
 				<div class="col-xs-1"><!--Placeholder--></div>
@@ -58,70 +57,72 @@
 				</div>
 				<div class="col-xs-1"><!--Placeholder--></div>
 			</div>
-			<div ng-if="ok2">
-				<div class="panel panel-default panel-body" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)">
-					<div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)" ng-init="left_counter=false; left_counter_2=false; right_counter=false; right_counter_2=false; last_clicked=0; last_clicked_2=0;">
-						<div class="col-xs-12 header">
-							<h1>Instructions: Out of the two choices shown below, select the font which looks better.</h1>
-						</div>
-					</div>
-					<div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)" ng-init="count=5">
-						<div class="col-xs-12 col-md-6">
-							<div ng-click="left_counter = true; count = count - 1; last_clicked = 1">
-								<div class="panel panel-default panel-body">
-									<h1 class="{{count*100+3}}">Choice 1: The quick brown fox jumps over the lazy dog.</h1>
-								</div>
+			<div class="container">
+				<div ng-if="ok2">
+					<div class="panel panel-default panel-body" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)">
+						<div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)" ng-init="left_counter=false; left_counter_2=false; right_counter=false; right_counter_2=false; last_clicked=0; last_clicked_2=0;">
+							<div class="col-xs-12 header">
+								<h1>Instructions: Out of the two choices shown below, select the font which looks better.</h1>
 							</div>
 						</div>
-						<div class="col-xs-12 col-md-6">
-							<div ng-click="right_counter = true; count = count + 1; last_clicked = 0">
-								<div class="panel panel-default panel-body">
-									<h1 class="{{count*100+103}}">Choice 2: The quick brown fox jumps over the lazy dog.</h1>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div ng-if="(left_counter && right_counter) || count == 0 || count == 10 ">
-					<div ng-init="count = count + last_clicked">
-						<div class="panel panel-default panel-body" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))">
-							<div class="row" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))">
-								<div class="col-xs-12 header">
-									<h1>Instructions: Out of the two choices shown below, select the font which looks better.</h1>
-								</div>
-							</div>
-							<div class="row" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))" ng-init="count2 = 3">
-								<div class="col-xs-12 col-md-6">
-									<div ng-click="left_counter_2 = true; count2 = count2 - 1; last_clicked_2 = 1">
-										<div class="panel panel-default panel-body">
-											<h1 class="{{count*100+count2}}">Choice 1: The quick brown fox jumps over the lazy dog.</h1>
-										</div>
+						<div class="row" ng-show="(!left_counter || !right_counter) && (count >= 1 && count < 10)" ng-init="count=5">
+							<div class="col-xs-12 col-md-6">
+								<div ng-click="left_counter = true; count = count - 1; last_clicked = 1">
+									<div class="panel panel-default panel-body">
+										<h1 class="{{count*100+3}}">Choice 1: The quick brown fox jumps over the lazy dog.</h1>
 									</div>
 								</div>
-								<div class="col-xs-12 col-md-6">
-								  <div ng-click="right_counter_2 = true; count2 = count2 + 1; last_clicked_2 = 0">
-										<div class="panel panel-default panel-body">
-											<h1 class="{{count*100+count2+1}}">Choice 2: The quick brown fox jumps over the lazy dog.</h1>
-										</div>
-								  </div>
-								</div>
 							</div>
-						</div>    
-						<div ng-if="(left_counter_2 && right_counter_2) || count2 == 0 || count2 == 6">
-							<div ng-init="count2 = count2 + last_clicked_2"> 
-								<div class="row" ng-show="(left_counter_2 && right_counter_2)||(count2 == 1 || count2 == 6)">
-									<div class="col-xs-1"><!--Placeholder--></div>
-									<div class="col-xs-10 header panel panel-defauly panel-body" ng-init = "postCall(count*100+count2)">
-										<h1>Your vision examination results are <strong>{{count*100 + count2}}</strong></h1>
-										<h2>Please write down this number, as you may need to reference it in the future.</h2>
-										<h3>Downloads:</h3>
-										<a class="bk" href="win/setup.exe"><button class="btn purple hidden-xs hidden-sm">EyeSite for Windows</button></a>
-										<a class="bk" href="and/{{count*100+count2}}.apk"><button class="btn yellow">EyeSite for Android</button></a>
+							<div class="col-xs-12 col-md-6">
+								<div ng-click="right_counter = true; count = count + 1; last_clicked = 0">
+									<div class="panel panel-default panel-body">
+										<h1 class="{{count*100+103}}">Choice 2: The quick brown fox jumps over the lazy dog.</h1>
 									</div>
-									<div class="col-xs-1"><!--Placeholder--></div>
 								</div>
 							</div>
-						</div>    
+						</div>
+					</div>
+					<div ng-if="(left_counter && right_counter) || count == 0 || count == 10 ">
+						<div ng-init="count = count + last_clicked">
+							<div class="panel panel-default panel-body" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))">
+								<div class="row" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))">
+									<div class="col-xs-12 header">
+										<h1>Instructions: Out of the two choices shown below, select the font which looks better.</h1>
+									</div>
+								</div>
+								<div class="row" ng-show="((!left_counter_2 || !right_counter_2) && (count2 >= 1 && count2 < 6))" ng-init="count2 = 3">
+									<div class="col-xs-12 col-md-6">
+										<div ng-click="left_counter_2 = true; count2 = count2 - 1; last_clicked_2 = 1">
+											<div class="panel panel-default panel-body">
+												<h1 class="{{count*100+count2}}">Choice 1: The quick brown fox jumps over the lazy dog.</h1>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-6">
+									  <div ng-click="right_counter_2 = true; count2 = count2 + 1; last_clicked_2 = 0">
+											<div class="panel panel-default panel-body">
+												<h1 class="{{count*100+count2+1}}">Choice 2: The quick brown fox jumps over the lazy dog.</h1>
+											</div>
+									  </div>
+									</div>
+								</div>
+							</div>    
+							<div ng-if="(left_counter_2 && right_counter_2) || count2 == 0 || count2 == 6">
+								<div ng-init="count2 = count2 + last_clicked_2"> 
+									<div class="row" ng-show="(left_counter_2 && right_counter_2)||(count2 == 1 || count2 == 6)">
+										<div class="col-xs-1"><!--Placeholder--></div>
+										<div class="col-xs-10 header panel panel-defauly panel-body" ng-init = "postCall(count*100+count2)">
+											<h1>Your vision examination results are <strong>{{count*100 + count2}}</strong></h1>
+											<h2>Please write down this number, as you may need to reference it in the future.</h2>
+											<h3>Downloads:</h3>
+											<a class="bk" href="win/setup.exe"><button class="btn purple hidden-xs hidden-sm">EyeSite for Windows</button></a>
+											<a class="bk" href="and/{{count*100+count2}}.apk"><button class="btn yellow">EyeSite for Android</button></a>
+										</div>
+										<div class="col-xs-1"><!--Placeholder--></div>
+									</div>
+								</div>
+							</div>    
+						</div>
 					</div>
 				</div>
 			</div>

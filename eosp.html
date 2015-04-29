@@ -11,13 +11,13 @@
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
+            <div class="container">    
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html"><p class="eyesite-color">EyeSite</p></a>
                 </div>
@@ -28,58 +28,58 @@
                         <li><a href="help.html">Installation</a></li>
                     </ul>
                 </div>
+			</div>
         </nav>
-                    
-        <ul class="nav nav-tabs" role="tablist" id="myTab">
-    <li role="presentation" class="active"><a class="xl" href="#eosp" aria-controls="eosp" role="tab" data-toggle="tab">The EyeSite Open Source Project</a></li>
-  <li role="presentation"><a class="xl" href="#font" aria-controls="font" role="tab" data-toggle="tab">EyeSite Open Font Family</a></li>
-</ul>
+        <div class="container">            
+			<ul class="nav nav-tabs" role="tablist" id="myTab">
+				<li role="presentation" class="active"><a class="xl" href="#eosp" aria-controls="eosp" role="tab" data-toggle="tab">The EyeSite Open Source Project</a></li>
+				<li role="presentation"><a class="xl" href="#font" aria-controls="font" role="tab" data-toggle="tab">EyeSite Open Font Family</a></li>
+			</ul>
 
-<div class="tab-content">
-     <div role="tabpanel" class="tab-pane active panel panel-default panel-body" id="eosp"><h1 class="header">Source Code</h1><br>
-         <div class="row">
-             <div class="col-xs-1"><!--Placeholder--></div>
-             <div class="col-xs-10 panel panel-default panel-body header">
-                 <h2>The EyeSite development website is hosted on <a href="http://thevisionaries.github.io">thevisionaries.github.io</a>. Source code for the site is in the Github repository by the same name.</h2>
-                 <button class="btn yellow" href="https://github.com/thevisionaries/thevisionaries.github.io">Visit our GitHub Repository</button>
-                 <h2>You can also access our repository from Git Shell. Enter the following command, and voila!</h2>
-                 <pre><code>$ git clone https://github.com/thevisionaries/thevisionaries.github.io</code></pre>
-             </div>
-             <div class="col-xs-1"><!--Placeholder--></div>
-         </div>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="font"><h1 class="header">Fonts</h1><br>
-        <div class="row">
-             <div class="col-xs-1"><!--Placeholder--></div>
-             <div class="col-xs-10 panel panel-default panel-body header" ng-hide="ok" ng-init="ok=false">
-                 <h2>EyeSite contains a total of 60 fonts. They are available for download upon acceptance of the EyeSite Terms and Conditions listed below.</h2>
-                 <div class="left"><p>The EyeSite Open Font Family is licensed for use under the terms of the MIT License.</p>
-						<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-						<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-						<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>  
-                 </div>
-                 <button class="bk btn green" ng-click="ok=true">Accept</button><a class="bk" href="eosp.html"><button class="btn red">Decline</button></a>
-             </div>
-            <div class="col-xs-10 panel panel-default panel-body header" ng-show="ok">
-                <h1>Hello World!</h1>
-             </div>
-             <div class="col-xs-1"><!--Placeholder--></div>
-         </div>
-    </div>
-    
-</div>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active panel panel-default panel-body" id="eosp"><h1 class="header">Source Code</h1><br>
+						<div class="col-xs-1"><!--Placeholder--></div>
+						<div class="col-xs-10 panel panel-default header">
+							<h2>The EyeSite development website is hosted on <a href="http://thevisionaries.github.io">thevisionaries.github.io</a>. Source code for the site is in the Github repository by the same name.</h2>
+							<a href="https://github.com/thevisionaries/thevisionaries.github.io"><button type="button" class="btn yellow">Visit our GitHub Repository</button></a>
+							<h2>You can also access our repository from Git Shell. Enter the following command, and voila!</h2>
+							<pre><code>$ git clone https://github.com/thevisionaries/thevisionaries.github.io</code></pre>
+						</div>
+						<div class="col-xs-1"><!--Placeholder--></div>
+				</div>
+				<div role="tabpanel" class="tab-pane panel panel-default panel-body" id="font"><br>					
+						<div class="col-xs-1"><!--Placeholder--></div>
+						<div class="col-xs-10 panel panel-default header" ng-hide="ok" ng-init="ok=false">
+							<h2>EyeSite contains a total of 60 fonts. They are available for download upon acceptance of the EyeSite Terms and Conditions listed below.</h2><br>
+							<div class="left">
+								<p>The EyeSite Open Font Family is licensed for use under the terms of the MIT License.</p>
+								<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+								<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+								<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>  
+							</div>
+							<button class="bk btn green" ng-click="ok=true">Accept</button><a class="bk" href="eosp.html"><button class="btn red">Decline</button></a>
+						</div>
+						<div class="col-xs-10 panel panel-default header" ng-show="ok">
+							<h1>Hello World!</h1>
+						</div>
+						<div class="col-xs-1"><!--Placeholder--></div>
+				</div>  
+			</div>
+		</div>
+		
         <nav class="navbar navbar-inverse navbar-fixed-bottom">
             <div class="container">
-                <p class="bottom-text-padding"> &copy; The Visionaries 2015 &#8226; <a href="privacy.html">Privacy Policy</a> &#8226; <a href="eosp.html">View the EyeSite Open Source Project.</a> </p>
+                <p class="bottom-text-padding"> &copy; The Visionaries 2015 &#8226; <a href="privacy.html">Privacy Policy</a> &#8226; <a href="#">View the EyeSite Open Source Project.</a> </p>
             </div>
         </nav>
+		
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script src="js/angular.min.js"></script>
-            <script>
-            $(function () {
-                $('#myTab a:last').tab('show')
-            })
-            </script>
+		<script>
+			$(function () {
+				$('#myTab a:last').tab('show')
+			})
+		</script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/prism.js"></script>
     </body>
